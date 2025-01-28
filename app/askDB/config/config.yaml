@@ -1,0 +1,15 @@
+credentials:
+  AWS_DEFAULT_REGION: us-east-1
+  BEDROCK_ASSUME_ROLE: arn:aws:iam::126225155318:role/askdb-bedrock-main-account
+  ATHENA_ROLE_ARN: arn:aws:iam::511372950887:role/askdb-project-role-llm-bi
+  ATHENA_ROLE_SESSION_NAME: askdb_account_datalake_access
+  ATHENA_DEFAULT_REGION: us-east-1
+  ATHENA_DATABASE_NAME: askdb_final_db
+  ATHENA_OUTPUT_LOCATION: s3://askdb-qa-user-data/projects/askdb-dir/athena-results/
+
+models:
+  model_id: "anthropic.claude-v2"
+
+hyperparameters:
+  max_tokens_to_sample: 8190
+  temperature: 0
